@@ -16,6 +16,7 @@ plugins {
     // Spring
     id 'org.springframework.boot' version '2.4.4'
     id "io.spring.dependency-management" version "1.0.11.RELEASE"
+
 }
 
 repositories {
@@ -38,6 +39,10 @@ dependencies {
 
     // Use the Kotlin JUnit integration.
     testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
+
+    // Jackson
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.12.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.2'
 
     // Spring
     implementation 'org.springframework.boot:spring-boot-starter-web'
