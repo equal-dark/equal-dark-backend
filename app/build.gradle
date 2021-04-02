@@ -12,6 +12,10 @@ plugins {
 
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+
+    // Spring
+    id 'org.springframework.boot' version '2.4.4'
+    id "io.spring.dependency-management" version "1.0.11.RELEASE"
 }
 
 repositories {
@@ -34,6 +38,10 @@ dependencies {
 
     // Use the Kotlin JUnit integration.
     testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
+
+    // Spring
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
 application {
